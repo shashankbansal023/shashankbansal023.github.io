@@ -1,0 +1,122 @@
+:root{
+	font-size: 16px;
+};
+
+.container{
+	display: flex;
+}
+
+.intro{
+	display: flex;
+	flex-direction: row;
+	background-color:#827717;
+	border-radius: 5px;
+}
+
+.container .intro:hover{
+	box-shadow: 0px 3px 20px 2px black;
+}
+
+.intro .text .head{
+	font-size:5rem;
+	margin:2vh;
+	font-family: "Istok Web"
+	font-weight: bolder;
+}
+
+.intro .text .sub-head{
+	font-size:2rem;
+	font-family:"Playfair Display";
+	margin:2vh;
+}
+
+.intro .my-image{
+	margin: 5vh;
+	border-radius: 50%;
+    width:20vw;
+    align-content: right;
+}
+
+.intro .my-image:hover{
+	box-shadow: 0px 3px 10px 2px black;
+}
+
+
+.about-me{
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	height:30vh;
+}
+
+
+.about-me .item{
+	width:40%;
+	margin:2vh;
+	margin-left: 13vh;
+	background-color:#006064;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.about-me .item:hover{
+	box-shadow: 0px 3px 20px 2px black;
+}
+
+.about-me .item h1{
+	text-align: center;
+	font-family: "Istok Web";
+	text-decoration: underline;
+}
+
+.about-me .item p{
+	font-size:1.5rem;
+	text-align: center;
+	font-family: "Playfair Display"
+	font-weight:bold;
+}
+
+.about-me .contact{
+	margin:3vh;
+	width:100%;
+	background-color: #37474F;
+	text-align: center;
+	font-family:"Istok Web";
+	border-radius: 5px;
+	
+}
+
+.about-me .contact:hover{
+	box-shadow: 0px 3px 20px 2px black; 
+}
+
+.about-me .contact h1{
+	text-decoration: underline;
+}
+
+.about-me .contact p{
+	font-size: 1.5rem;
+}
+
+
+@media screen and (max-width:1006px){
+
+	.intro{
+		flex-direction:column;
+		align-items: center;
+	}
+	.intro .my-image{
+		width:50vw;
+	}
+
+	.about-me .item{
+		flex-direction:column;
+		width:100%;
+		margin-top: 3vw;
+		margin-left: 3vw;
+	}
+	.about-me .contact{
+		width:100%;
+	}
+}
+
